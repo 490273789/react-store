@@ -1,12 +1,14 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
+import svg1 from "@site/static/img/undraw_docusaurus_mountain.svg";
+import svg2 from "@site/static/img/undraw_docusaurus_tree.svg";
+import svg3 from "@site/static/img/undraw_docusaurus_react.svg";
 
 const FeatureList = [
   {
     title: "Easy to Use",
-    // Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    Svg: import("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: svg1,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -16,7 +18,7 @@ const FeatureList = [
   },
   {
     title: "Focus on What Matters",
-    Svg: import("@site/static/img/undraw_docusaurus_tree.svg").default,
+    Svg: svg2,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -26,7 +28,7 @@ const FeatureList = [
   },
   {
     title: "Powered by React",
-    Svg: import("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: svg3,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
