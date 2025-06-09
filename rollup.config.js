@@ -87,6 +87,8 @@ function createUMDConfig(input, output, name) {
 }
 
 export default (args) => {
+  // rollup -c --package jotai
+  // args.package = jotai
   const packageName = args.package;
 
   const input = `packages/${packageName}`;

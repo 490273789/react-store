@@ -10,16 +10,17 @@ jobs:
   test:
     runs-on: ubuntu-latest # 指定运行环境，意味着该 job 会在 GitHub 托管的最新的 Ubuntu Linux 环境下运行
     steps:
+      # uses 关键字用于指定要在步骤中使用的 Action
       - name: Checkout
         uses: actions/checkout@v4 # 用来将代码库的最新版本下载到 workflow 的运行的环境中
       - name: Setup pnpm
         uses: pnpm/action-setup@v4 # 设置 pnpm
         with:
-          version: 9.12.3 # 使用8版本
+          version: 10.12.1 # 使用10版本
       - name: Setup Node
         uses: actions/setup-node@v4 # 设置nodejs环境并配置pnpm缓存
         with:
-          node-version: "20"
+          node-version: "22"
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline # 安装依赖
