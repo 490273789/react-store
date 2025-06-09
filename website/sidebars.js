@@ -24,9 +24,19 @@ const sidebars = {
     'intro',
     'hello',
     {
-      type: 'category',
+      type: 'category', // 侧边栏下拉
       label: 'Tutorial',
       items: ['tutorial-basics/create-a-document'],
+    },
+    {
+      type: "link", // 网站链接
+      label: "掘金",
+      href: "https://juejin.cn/",
+    },
+    {
+      type: "html", // 渲染纯html
+      value: '<a target="_blank" href="https://juejin.cn/">掘金</a>', // The HTML to be rendered
+      defaultStyle: true, // Use the default menu item styling
     },
   ],
    */

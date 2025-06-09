@@ -75,6 +75,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      // algolia: {
+      //   appId: "YOUR_APP_ID",
+      //   apiKey: "YOUR_SEARCH_API_KEY",
+      //   indexName: "YOUR_INDEX_NAME",
+      // },
       navbar: {
         title: "My Site",
         logo: {
