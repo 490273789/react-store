@@ -20,9 +20,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4 # 设置nodejs环境并配置pnpm缓存
         with:
-          node-version: "22"
+          node-version: "22.16.0"
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --prefer-offline # 安装依赖
+        run: pnpm install --frozen-lockfile # 安装依赖
       - name: Run Tests
         run: pnpm run test # 跑单元测试脚本
