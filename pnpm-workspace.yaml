@@ -1,4 +1,9 @@
 packages:
-  - 'packages/*'
-  - 'website'
-  - 'examples/*'
+  - packages/*
+  - website
+  - examples/*
+
+onlyBuiltDependencies:
+  - core-js
+  - core-js-pure
+  - unrs-resolver
